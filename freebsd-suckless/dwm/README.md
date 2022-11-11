@@ -1,4 +1,4 @@
-# DWM - dynamic window manager
+# DWM - dynamic window manager, [Original source](https://github.com/Digital-Chaos/dwm/tree/freebsd)
 dwm is an extremely fast, small, and dynamic window manager for X.
 
 
