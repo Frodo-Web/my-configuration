@@ -16,8 +16,9 @@ necessary as root):
 make clean install
 ````
 ## Running DWM
-Add the following line to your .xinitrc to start dwm using startx:
+Add the following lines to your .xinitrc to start dwm using startx:
 ````
+#!/bin/sh
 exec dwm
 ````
 In order to connect dwm to a specific display, make sure that
@@ -30,12 +31,13 @@ DISPLAY=foo.bar:1 exec dwm
 In order to display status info in the bar, you can do something
 like this in your .xinitrc:
 ````
-    while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
-    do
-    	sleep 1
-    done &
-    exec dwm
+while xsetroot -name "`date` `uptime | sed 's/.*,//'`"
+do
+    sleep 1
+done &
+exec dwm
 ````
+### But better use slstatus, [Check this out](https://github.com/Frodo-Web/my-configuration/tree/main/freebsd-suckless/slstatus)
 ## Configuration
 The configuration of dwm is done by creating a custom config.h
 and (re)compiling the source code.
