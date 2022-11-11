@@ -43,7 +43,6 @@ necessary as root):
 
 
 ## Running slstatus with DWM
-----------------
 See the man page for details.
 ### Add slstatus execution to your .xinitrc file like this:
 ````
@@ -53,6 +52,5 @@ slstatus &
 exec dwm
 ````
 ## Configuration
--------------
 slstatus can be customized by creating a custom config.h and (re)compiling the
 source code. This keeps it fast, secure and simple.
