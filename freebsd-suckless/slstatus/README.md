@@ -1,11 +1,9 @@
-slstatus - suckless status
-==========================
+# slstatus - suckless status, [Original source](https://github.com/Digital-Chaos/slstatus)
 slstatus is a suckless status monitor for window managers that use WM_NAME
 (e.g. dwm) or stdin to fill the status bar.
 
 
-Features
---------
+## Features
 - Battery percentage/power/state
 - CPU usage
 - CPU frequency
@@ -29,14 +27,12 @@ Features
 - WiFi signal percentage and ESSID
 
 
-Requirements
-------------
+## Requirements
 In order to build slstatus you need the Xlib header files and optionally ALSA
 for volume percentage. PulseAudio is not supported for various reasons.
 
 
-Installation
-------------
+## Installation
 Edit config.mk to match your local setup (slstatus is installed into the
 /usr/local namespace by default).
 
@@ -46,12 +42,15 @@ necessary as root):
     make clean install
 
 
-Running slstatus
-----------------
+## Running slstatus with DWM
 See the man page for details.
-
-
-Configuration
--------------
+### Add slstatus execution to your .xinitrc file like this:
+````
+#!/bin/sh
+feh --no-fehbg --bg-fill /home/sega/background.jpg
+slstatus &
+exec dwm
+````
+## Configuration
 slstatus can be customized by creating a custom config.h and (re)compiling the
 source code. This keeps it fast, secure and simple.
