@@ -15,6 +15,15 @@ necessary as root):
 ````
 make clean install
 ````
+## #define MODKEY Mod4Mask
+The default MODKEY is left Alt key, it's defined in config.def.h as:
+````
+#define MODKEY Mod1Mask
+````
+We switch to Win key to make use of it:
+````
+#define MODKEY Mod4Mask
+````
 ## Running DWM
 Add the following lines to your .xinitrc to start dwm using startx:
 ````
