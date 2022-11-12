@@ -24,6 +24,14 @@ We switch to Win key to make use of it:
 ````
 #define MODKEY Mod4Mask
 ````
+## Install fonts
+Font Awesome 6 are required for this configuration
+````
+// config.h
+#define FONT_AWESOME_BRANDS     "Font Awesome 6 Brands-9"
+#define FONT_AWESOME_FREE       "Font Awesome 6 Free Solid-9"
+````
+To install these fonts follow this guide - [Custom xorg fonts in FreeBSD](https://github.com/Frodo-Web/frodo-tips/blob/main/FreeBSD-tips-by-Frodo/custom-fonts.md)
 ## Running DWM
 Add the following lines to your .xinitrc to start dwm using startx:
 ````
