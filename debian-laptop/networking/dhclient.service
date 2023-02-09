@@ -1,0 +1,12 @@
+[Unit]
+Description= DHCP Client
+Before=network.target
+After=wpa_supplicant.service
+
+[Service]
+Type=forking
+ExecStart=/sbin/dhclient wlo1 -v
+ExecStart=/sbin/dhclient wlo1 -r
+
+[Install]
+WantedBy=multi-user.target
