@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+#while true 
+#do
+#	avg=$(</proc/loadavg)
+#	date=`date +"%a %d %b %H:%M"`
+#        avg=$(cat /proc/loadavg)
+#        xsetroot -name "$date | $avg"
+#	sleep 10
+#done &
+feh --no-fehbg --bg-fill /home/dev/Library/wallpaper.jpg
+slstatus &
+exec dbus-launch --sh-syntax --exit-with-session /usr/local/bin/dwm
