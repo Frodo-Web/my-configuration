@@ -1,0 +1,8 @@
+vim /etc/systemd/network/10-wifi.link
+...
+[Match]
+MACAddress=a8:4b:05:2b:e8:54
+
+[Link]
+NamePolicy=
+Name=wlo1
