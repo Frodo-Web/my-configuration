@@ -1,0 +1,8 @@
+vim /etc/systemd/network/static.network
+...
+[Match]
+Name=wlo1
+
+[Network]
+Address=192.168.0.99/24
+Gateway=192.168.0.1
